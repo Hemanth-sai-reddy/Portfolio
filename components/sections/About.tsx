@@ -25,7 +25,7 @@ const About = () => {
             <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center">
               <div className="w-4/5 h-4/5 relative">
                 <Image
-                  src="/photos/profile.jpg"
+                  src="/photos/hemanth.jpg"
                   alt="Devarapalli Hemanth Sai"
                   fill
                   className="object-cover rounded-xl"

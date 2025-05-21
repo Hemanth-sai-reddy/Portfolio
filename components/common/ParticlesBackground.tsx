@@ -16,8 +16,10 @@ const ParticlesBackground = () => {
         setDimensions({ width, height });
         
         if (canvasRef.current) {
-          canvasRef.current.width = width;
-          canvasRef.current.height = height;
+          canvasRef.current.width = width * window.devicePixelRatio;
+          canvasRef.current.height = height * window.devicePixelRatio;
+          canvasRef.current.style.width = `${width}px`;
+          canvasRef.current.style.height = `${height}px`;
         }
       }
     };
@@ -39,6 +41,10 @@ const ParticlesBackground = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
+
+    // Scale the context to match device pixel ratio
+    const dpr = window.devicePixelRatio;
+    ctx.scale(dpr, dpr);
 
     const particleCount = Math.min(Math.floor(dimensions.width / 10), 100);
     const particleColor = theme === "dark" ? "rgba(255, 255, 255, 0.7)" : "rgba(0, 0, 0, 0.7)";
