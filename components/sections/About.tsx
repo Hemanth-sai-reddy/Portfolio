@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import { SectionHeading } from "@/components/ui/section-heading";
-import Image from "next/image";
 
 const About = () => {
   return (
@@ -24,13 +23,10 @@ const About = () => {
           >
             <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center">
               <div className="w-4/5 h-4/5 relative">
-                <Image
-                  src="/photos/hemanth.jpg"
+                <img
+                  src="/images/hemanthsuit.jpg"
                   alt="Devarapalli Hemanth Sai"
-                  fill
-                  className="object-cover rounded-xl"
-                  sizes="(max-width: 768px) 100vw, 400px"
-                  priority
+                  className="object-cover rounded-xl w-full h-full"
                 />
               </div>
             </div>

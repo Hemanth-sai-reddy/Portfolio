@@ -92,7 +92,7 @@ const Navbar = () => {
             size="sm"
             className="ml-2"
           >
-            <a href="/resume.pdf" download>
+            <a href="https://drive.google.com/file/d/1rYrEEAsNLjDsajgI_Z7bOOJmpoCAeo-T/view?usp=sharing" download>
               Resume
             </a>
           </Button>
@@ -151,7 +151,7 @@ const Navbar = () => {
                   className="w-full mt-2"
                   size="sm"
                 >
-                  <a href="/resume.pdf" download>
+                  <a href="https://drive.google.com/file/d/1rYrEEAsNLjDsajgI_Z7bOOJmpoCAeo-T/view?usp=sharing" download>
                     Download Resume
                   </a>
                 </Button>

@@ -69,7 +69,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full">
-              <a href="https://mirror.leechmirror512.workers.dev/0:/Resume.pdf" download>
+              <a href="https://drive.google.com/file/d/1rYrEEAsNLjDsajgI_Z7bOOJmpoCAeo-T/view?usp=sharing" download>
                 <Download className="mr-2 h-4 w-4" /> Download Resume
               </a>
             </Button>
